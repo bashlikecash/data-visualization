@@ -5,13 +5,13 @@ window.onload = setup
 // wait for the html elements to be selectable
 function setup () {
 
+    const div = d3.select('#main-vis') // matches the tag in the html file
+    
     const dataViz = [
         {w: '100', h: '100', x: '100', y: '100', c: 'DarkTurquoise'},
         {w: '75', h: '75', x: '75', y: '75', c: 'Gold'},
         {w: '50', h: '50', x: '50', y: '50', c: 'Salmon'}
     ]
-
-    const div = d3.select('#main-vis') // matches the tag in the html file
 
     const svg = d3.create('svg')
         .attr('width', 400)
