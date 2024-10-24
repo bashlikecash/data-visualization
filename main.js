@@ -26,6 +26,10 @@ function setup () {
             .attr("height", row => row.h)
             .attr("fill", row => row.c);
 
-    
-    div.append(svg)
+    // what is going on...
+    console.log(svg.node())
+
+    // append child is a javascript method not d3.
+    // this is just one way to get the update
+    div.node().appendChild(svg.node())
 }
