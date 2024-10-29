@@ -12,8 +12,6 @@ function setup () {
         {w: '50', h: '50', x: '50', y: '50', c: 'Salmon'}
     ]
 
-    const div = d3.select('#main-vis') // matches the tag in the html file
-
     const svg = d3.create('svg')
         .attr('width', 400)
         .attr('height', 400)
