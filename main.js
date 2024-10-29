@@ -26,7 +26,7 @@ function setup () {
             .attr("fill", row => row.c)
 
     
-    div.append(svg)
+    div.append(svg) // this line might need to come out???
     
     // what is going on...
     console.log(svg.node())
