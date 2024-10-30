@@ -17,16 +17,13 @@ function setup () {
         .attr('height', 400)
 
     svg.selectAll('rect')      // sets shape to rectangles
-        .data(dataViz)             
-        .join('rect')            
+        .data(dataViz)
+        .join('rect')
             .attr("x", row => row.x) 
             .attr("y", row => row.y)  
             .attr("width", row => row.w) 
             .attr("height", row => row.h)
             .attr("fill", row => row.c)
-
-    
-    div.append(svg) // this line might need to come out???
     
     // what is going on...
     console.log(svg.node())
